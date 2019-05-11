@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "28a56357-fcde-4f3a-895a-668cc45f8aed",
+		"name": "shoplist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "sign-up",
+					"item": [
+						{
+							"name": "Register Enora",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"if (!(environment.isIntegrationTest)) {",
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"}",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"enora@gmail.com\", \"password\":\"enora\", \"username\":\"Enora\", \"firstName\": \"Enora\", \"lastName\": \"Boudic\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Lada",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"if (!(environment.isIntegrationTest)) {",
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"}",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"lada@gmail.com\", \"password\":\"lada\", \"username\":\"Lada\", \"firstName\": \"Lada\", \"lastName\": \"Larina\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Florian",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"if (!(environment.isIntegrationTest)) {",
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"}",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"blayflorian@gmail.com\", \"password\":\"florian\", \"username\":\"Florian\", \"firstName\": \"Florian\", \"lastName\": \"Blay\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register Corentin",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"if (!(environment.isIntegrationTest)) {",
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"}",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"corentin@gmail.com\", \"password\":\"corentin\", \"username\":\"Corentin\", \"firstName\": \"Corentin\", \"lastName\": \"Carré\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "Login Lada and Remember Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fed2e5bf-c43f-409a-a0e7-111bba70ca1e",
+										"type": "text/javascript",
+										"exec": [
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"tests['Environment variable \"token\" has been set'] = environment.token === user.token;",
+											"",
+											"if(tests['User has \"token\" property']){",
+											"    postman.setEnvironmentVariable('token', user.token);",
+											"}"
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"lada@gmail.com\", \"password\":\"lada\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users/login",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login Florian and Remember Token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"",
+											"if(tests['User has \"token\" property']){",
+											"    postman.setEnvironmentVariable('token', user.token);",
+											"}",
+											"",
+											"tests['Environment variable \"token\" has been set'] = environment.token === user.token;",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"blayflorian@gmail.com\", \"password\":\"florian\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users/login",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login Corentin and Remember Token Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"",
+											"if(tests['User has \"token\" property']){",
+											"    postman.setEnvironmentVariable('token', user.token);",
+											"}",
+											"",
+											"tests['Environment variable \"token\" has been set'] = environment.token === user.token;",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"corentin@gmail.com\", \"password\":\"corentin\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users/login",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login Enora and Remember Token Copy Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"var responseJSON = JSON.parse(responseBody);",
+											"",
+											"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+											"",
+											"var user = responseJSON.user || {};",
+											"",
+											"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+											"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+											"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+											"",
+											"if(tests['User has \"token\" property']){",
+											"    postman.setEnvironmentVariable('token', user.token);",
+											"}",
+											"",
+											"tests['Environment variable \"token\" has been set'] = environment.token === user.token;",
+											""
+										]
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Requested-With",
+										"value": "XMLHttpRequest"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"user\":{\"email\":\"enora@gmail.com\", \"password\":\"enora\"}}"
+								},
+								"url": {
+									"raw": "{{apiUrl}}/users/login",
+									"host": [
+										"{{apiUrl}}"
+									],
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Current User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var responseJSON = JSON.parse(responseBody);",
+									"",
+									"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+									"",
+									"var user = responseJSON.user || {};",
+									"",
+									"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+									"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+									"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}/user",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var responseJSON = JSON.parse(responseBody);",
+									"",
+									"tests['Response contains \"user\" property'] = responseJSON.hasOwnProperty('user');",
+									"",
+									"var user = responseJSON.user || {};",
+									"",
+									"tests['User has \"email\" property'] = user.hasOwnProperty('email');",
+									"tests['User has \"username\" property'] = user.hasOwnProperty('username');",
+									"tests['User has \"token\" property'] = user.hasOwnProperty('token');",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user\":{\"email\":\"john@jacob.com\"}}"
+						},
+						"url": {
+							"raw": "{{apiUrl}}/user",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profiles",
+			"item": [
+				{
+					"name": "Profile",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"if (!(environment.isIntegrationTest)) {",
+									"var is200Response = responseCode.code === 200;",
+									"",
+									"tests['Response code is 200 OK'] = is200Response;",
+									"",
+									"if(is200Response){",
+									"    var responseJSON = JSON.parse(responseBody);",
+									"",
+									"    tests['Response contains \"profile\" property'] = responseJSON.hasOwnProperty('profile');",
+									"    ",
+									"    var profile = responseJSON.profile || {};",
+									"    ",
+									"    tests['Profile has \"username\" property'] = profile.hasOwnProperty('username');",
+									"    tests['Profile has \"image\" property'] = profile.hasOwnProperty('image');",
+									"    tests['Profile has \"following\" property'] = profile.hasOwnProperty('following');",
+									"}",
+									"}",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest"
+							},
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{apiUrl}}/profiles/florian",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"profiles",
+								"florian"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
